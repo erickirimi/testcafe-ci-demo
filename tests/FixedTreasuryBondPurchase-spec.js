@@ -5,7 +5,7 @@ import loginmodel from './login-model';
 import tradenavigationmodel from './tradenavigation-model';
 
 fixture `Fixed Treasury Bond Trade UI Test`
-  .page `https://localhost:44300/`
+  .page `https://localhost:26246/`
   .beforeEach(loginmodel.login)
   .afterEach(async t => {
 	  const { error } = await t.getBrowserConsoleMessages()
