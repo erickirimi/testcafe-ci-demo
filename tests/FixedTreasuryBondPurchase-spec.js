@@ -1,5 +1,5 @@
 import {Selector, Role } from 'testcafe';
-import { AngularJSSelector, waitForAngular } from 'testcafe-angular-selectors';
+//import { AngularJSSelector, waitForAngular } from 'testcafe-angular-selectors';
 
 import loginmodel from '../Models/login-model';
 import tradenavigationmodel from '../Models/tradenavigation-model';

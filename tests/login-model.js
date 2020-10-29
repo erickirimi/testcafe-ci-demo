@@ -1,21 +1,21 @@
 
 import {Selector,t, Role } from 'testcafe';
-import { AngularJSSelector, waitForAngular } from 'testcafe-angular-selectors';
+
 
 class Login {
     constructor () {
 
         this.submitBtn = Selector('button').withAttribute('type', 'submit');
-        this.userName = AngularJSSelector.byModel('user.username');
-        this.password = AngularJSSelector.byModel('user.password');
+        this.userName = Selector('input').withAttribute('name', 'username'); 
+        this.password = Selector('input').withAttribute('name', 'password'); 
 
     }
 
     async login () {
 
         this.submitBtn = Selector('button').withAttribute('type', 'submit');
-        this.userName = AngularJSSelector.byModel('user.username');
-        this.password = AngularJSSelector.byModel('user.password');
+        this.userName = Selector('input').withAttribute('name', 'username'); 
+        this.password = Selector('input').withAttribute('name', 'password'); 
         await t
                .maximizeWindow()
                .wait(2000)
