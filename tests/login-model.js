@@ -6,16 +6,16 @@ class Login {
     constructor () {
 
         this.submitBtn = Selector('button').withAttribute('type', 'submit');
-        this.userName = Selector(()=> document.getElementsByName('username')[0]); 
-        this.password = Selector(()=> document.getElementsByName('password')[0]); 
+        this.userName = Selector(()=>{return document.getElementsByName('username')[0]} ); 
+        this.password = Selector(()=> {return  document.getElementsByName('password')[0]}); 
 
     }
 
     async login () {
 
         this.submitBtn = Selector('button').withAttribute('type', 'submit');
-        this.userName = Selector(()=> document.getElementsByName('username')[0]); 
-        this.password = Selector(()=> document.getElementsByName('password')[0]); 
+        this.userName = Selector(()=>{return document.getElementsByName('username')[0]} ); 
+        this.password = Selector(()=> {return  document.getElementsByName('password')[0]}); 
         await t
                .maximizeWindow()
                .wait(2000)
