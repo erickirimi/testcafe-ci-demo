@@ -1,8 +1,8 @@
 import {Selector, Role } from 'testcafe';
 //import { AngularJSSelector, waitForAngular } from 'testcafe-angular-selectors';
 
-import loginmodel from '../Models/login-model';
-import tradenavigationmodel from '../Models/tradenavigation-model';
+import loginmodel from '../login-model';
+import tradenavigationmodel from '../tradenavigation-model';
 
 fixture `Fixed Treasury Bond Trade UI Test`
   .page `https://localhost:44300/`
